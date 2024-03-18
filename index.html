@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ accordion</title>
+
+  <!-- development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <link rel="stylesheet" type="text/css" href="./styles.css"/>
+</head>
+<body>
+  <div id='app' class="container">
+    <div class="title">
+      <img src="./assets/images/icon-star.svg" alt="Title Bullet"/>
+      <h1>FAQs</h1>
+    </div>
+
+    <div class="content">
+      <div class="section" v-for="( content, index ) in contents">
+        <div class="section-title">
+          <h2>{{ content[0] }}</h2>
+          <img src="./assets/images/icon-plus.svg"/>
+        </div>
+        <div
+          class="collapsible-content">
+          {{ content[1] }}
+        </div>
+      </div>
+    </div>
+
+    <br/>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">uKai</a>.
+    </div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+  <script src="./main.js"></script>
+</body>
+</html>
